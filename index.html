@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Films - Starlight Pictures</title>
+    <title>Starlight Pictures - Movie Production House</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,8 +77,8 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold tracking-tight text-white">STARLIGHT</a>
             <div class="hidden md:flex items-center space-x-10">
-                <a href="index.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Home</a>
-                <a href="films.html" class="nav-link active text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Films</a>
+                <a href="index.html" class="nav-link active text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Home</a>
+                <a href="films.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Films</a>
                 <a href="about.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">About</a>
                 <a href="services.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Services</a>
                 <a href="contact.html" class="bg-white text-black font-semibold px-5 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300 text-sm">Contact Us</a>
@@ -89,7 +89,7 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden glass-effect border-t-0">
-             <a href="index.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Home</a>
+            <a href="index.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Home</a>
             <a href="films.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Films</a>
             <a href="about.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">About</a>
             <a href="services.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Services</a>
@@ -98,87 +98,135 @@
     </header>
 
     <main>
-        <!-- Films Section -->
-        <section id="films" class="relative py-32 md:py-40">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center text-center">
+            <div class="z-10 px-4">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 tracking-tighter">
+                    The Future of Film. <br class="hidden md:block"/> <span class="gradient-text">Brilliantly Captured.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+                    We merge artistry with technology to create cinematic experiences that leave a lasting impact.
+                </p>
+                <a href="films.html" class="bg-white text-black font-bold text-base px-8 py-4 rounded-full hover:scale-105 transition-transform duration-300 inline-block shadow-2xl shadow-amber-500/20">
+                    View Our Reel
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Films Section -->
+        <section class="relative py-24 md:py-32">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-20">
-                    <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight">Our Work</h1>
-                    <p class="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">A selection of projects that define our creative vision, spanning genres and formats.</p>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">Featured Work</h2>
+                    <p class="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">A glimpse into the worlds we've created.</p>
                 </div>
-
-                <!-- Feature Films -->
-                <div class="mb-20">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-10 border-l-4 border-teal-400 pl-4">Feature Films</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        <!-- Film Card 1 -->
-                        <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
-                            <img src="uploads\images\Weapons.webp" alt="Film Poster 1" class="w-full h-full object-cover transform transition-all duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <div class="overlay-content">
-                                    <h3 class="text-3xl font-bold text-white mb-2">Weapons</h3>
-                                    <p class="text-gray-300 text-sm">A sci-fi epic about the last human colony searching for a new home among the stars.</p>
-                                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Film Card 1 -->
+                    <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
+                        <img src="uploads\images\superman.webp" alt="Film Poster 1" class="w-full h-full object-cover transform transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+                            <div class="overlay-content">
+                                <h3 class="text-3xl font-bold text-white mb-2">Superman</h3>
+                                <p class="text-gray-300 text-sm">A sci-fi epic about the last human colony searching for a new home among the stars.</p>
                             </div>
                         </div>
-                        <!-- Film Card 2 -->
-                        <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
-                            <img src="uploads\images\f1.jpg" alt="Film Poster 2" class="w-full h-full object-cover transform transition-all duration-500">
-                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <div class="overlay-content">
-                                    <h3 class="text-3xl font-bold text-white mb-2">F1</h3>
-                                    <p class="text-gray-300 text-sm">A gritty neo-noir thriller where a detective uncovers a conspiracy that hits too close to home.</p>
-                                </div>
+                    </div>
+                    <!-- Film Card 2 -->
+                    <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
+                        <img src="uploads\images\wednesday.webp" alt="Film Poster 2" class="w-full h-full object-cover transform transition-all duration-500">
+                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+                            <div class="overlay-content">
+                                <h3 class="text-3xl font-bold text-white mb-2">Wednesday</h3>
+                                <p class="text-gray-300 text-sm">A gritty neo-noir thriller where a detective uncovers a conspiracy that hits too close to home.</p>
                             </div>
                         </div>
-                        <!-- Film Card 3 -->
-                        <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
-                            <img src="uploads\images\superman.webp" alt="Film Poster 3" class="w-full h-full object-cover transform transition-all duration-500">
-                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <div class="overlay-content">
-                                    <h3 class="text-3xl font-bold text-white mb-2">Superman</h3>
-                                    <p class="text-gray-300 text-sm">Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.</p>
-                                </div>
+                    </div>
+                    <!-- Film Card 3 -->
+                    <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
+                        <img src="uploads\images\f1.jpg" alt="Film Poster 3" class="w-full h-full object-cover transform transition-all duration-500">
+                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+                            <div class="overlay-content">
+                                <h3 class="text-3xl font-bold text-white mb-2">F1</h3>
+                                <p class="text-gray-300 text-sm">A heart-wrenching drama about love, loss, and the choices that define a lifetime.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-16">
+                    <a href="films.html" class="text-teal-400 font-semibold hover:text-teal-300 transition-colors duration-300 text-lg">
+                        View All Films <i data-feather="arrow-right" class="inline-block w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                <!-- Documentaries & Shorts -->
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-10 border-l-4 border-amber-500 pl-4">Documentaries & Shorts</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        <!-- Film Card 4 -->
-                        <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
-                            <img src="uploads\images\wednesday.webp" alt="Film Poster 4" class="w-full h-full object-cover transform transition-all duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <div class="overlay-content">
-                                    <h3 class="text-3xl font-bold text-white mb-2">Wednesday</h3>
-                                    <p class="text-gray-300 text-sm">An investigative documentary into the unseen ecosystems thriving in urban environments.</p>
-                                </div>
-                            </div>
+        <!-- About Us Snippet -->
+        <section class="relative py-24 md:py-32 bg-[#050505]">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div class="md:pr-12">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">The <span class="gradient-text">Vision</span> Behind the Lens</h2>
+                    <p class="text-gray-400 mb-6 text-lg leading-relaxed">
+                        Starlight Pictures was founded on a simple yet powerful idea: to create films that resonate. We are a collective of passionate directors, writers, producers, and artists dedicated to pushing the boundaries of visual storytelling.
+                    </p>
+                    <a href="about.html" class="text-teal-400 font-semibold hover:text-teal-300 transition-colors duration-300 text-lg">
+                        Learn More About Us <i data-feather="arrow-right" class="inline-block w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="glass-effect rounded-2xl p-2">
+                    <img src="https://placehold.co/800x600/000000/333333?text=Our+Studio" alt="Production Team" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Snippet -->
+        <section class="relative py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">End-to-End Production</h2>
+                    <p class="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">From the first spark of an idea to the final cut, we provide a complete suite of services.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                    <!-- Service Snippet -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-teal-500/10 mx-auto mb-4 border border-teal-500/30">
+                            <i data-feather="edit-3" class="w-8 h-8 text-teal-400"></i>
                         </div>
-                        <!-- Film Card 5 -->
-                        <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
-                            <img src="uploads\images\got.webp" alt="Film Poster 5" class="w-full h-full object-cover transform transition-all duration-500">
-                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <div class="overlay-content">
-                                    <h3 class="text-3xl font-bold text-white mb-2">Game of Thrones</h3>
-                                    <p class="text-gray-300 text-sm">A short film profiling a master craftsman struggling to keep a dying art form alive.</p>
-                                </div>
-                            </div>
+                        <h3 class="text-xl font-bold text-white">Pre-Production</h3>
+                        <p class="text-gray-400">Crafting the blueprint for your story with meticulous planning and creative development.</p>
+                    </div>
+                    <!-- Service Snippet -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-amber-500/10 mx-auto mb-4 border border-amber-500/30">
+                            <i data-feather="camera" class="w-8 h-8 text-amber-400"></i>
                         </div>
-                        <!-- Film Card 6 -->
-                        <div class="film-card relative overflow-hidden rounded-2xl group cursor-pointer">
-                            <img src="uploads\images\familyguy.webp" alt="Film Poster 6" class="w-full h-full object-cover transform transition-all duration-500">
-                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                                <div class="overlay-content">
-                                    <h3 class="text-3xl font-bold text-white mb-2">Family Guy</h3>
-                                    <p class="text-gray-300 text-sm">A visually stunning documentary on the fragility and beauty of coral reef ecosystems.</p>
-                                </div>
-                            </div>
+                        <h3 class="text-xl font-bold text-white">Production</h3>
+                        <p class="text-gray-400">Bringing the vision to life with expert crews and state-of-the-art equipment.</p>
+                    </div>
+                    <!-- Service Snippet -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-cyan-500/10 mx-auto mb-4 border border-cyan-500/30">
+                            <i data-feather="scissors" class="w-8 h-8 text-cyan-400"></i>
                         </div>
+                        <h3 class="text-xl font-bold text-white">Post-Production</h3>
+                        <p class="text-gray-400">Polishing the final product with editing, effects, and sound design to create a masterpiece.</p>
                     </div>
                 </div>
+                <div class="text-center mt-16">
+                    <a href="services.html" class="text-teal-400 font-semibold hover:text-teal-300 transition-colors duration-300 text-lg">
+                        Explore Our Services <i data-feather="arrow-right" class="inline-block w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="relative py-24 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">Have a Project in Mind?</h2>
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto mb-10">Let's collaborate to create something extraordinary. We're ready to hear your idea.</p>
+                <a href="contact.html" class="bg-gradient-to-r from-teal-500 to-amber-600 text-white font-bold text-base px-10 py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-amber-500/20 inline-block">
+                    Get in Touch
+                </a>
             </div>
         </section>
     </main>
@@ -198,11 +246,13 @@
     <script>
         // Shared script for all pages
         feather.replace();
+
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
@@ -211,15 +261,18 @@
                 navbar.classList.remove('scrolled');
             }
         });
+
         const canvas = document.getElementById('gradient-canvas');
         const ctx = canvas.getContext('2d');
         let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
         let particles = [];
         const colors = ["#14b8a6", "#0891b2", "#f97316", "#b45309"];
+
         function resizeCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         }
+
         class Particle {
             constructor(isMouseFollower = false) {
                 this.isMouseFollower = isMouseFollower;
@@ -251,6 +304,7 @@
                 ctx.fill();
             }
         }
+
         function init() {
             resizeCanvas();
             particles = [];
@@ -259,6 +313,7 @@
                 particles.push(new Particle());
             }
         }
+
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             particles.forEach(p => {
@@ -267,6 +322,7 @@
             });
             requestAnimationFrame(animate);
         }
+
         window.addEventListener('mousemove', (e) => {
             mouse.x = e.clientX;
             mouse.y = e.clientY;
