@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Starlight Pictures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Shared styles for all pages */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #f3f4f6; 
+        }
+        #gradient-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(100px);
+            -webkit-filter: blur(100px);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #14b8a6, #f97316, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .glass-effect {
+            background: rgba(17, 24, 39, 0.5);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #374151; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+        #navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-link.active {
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <canvas id="gradient-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-white">STARLIGHT</a>
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Home</a>
+                <a href="films.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Films</a>
+                <a href="about.html" class="nav-link active text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">About</a>
+                <a href="services.html" class="nav-link text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Services</a>
+                <a href="contact.html" class="bg-white text-black font-semibold px-5 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300 text-sm">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t-0">
+             <a href="index.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Home</a>
+            <a href="films.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Films</a>
+            <a href="about.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">About</a>
+            <a href="services.html" class="block text-center py-4 text-gray-200 hover:bg-gray-800 transition-colors duration-200">Services</a>
+            <a href="contact.html" class="block text-center py-4 text-black bg-white font-semibold">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="relative py-32 md:py-40">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+                    <div class="md:pr-12">
+                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">The <span class="gradient-text">Vision</span> Behind the Lens</h1>
+                        <p class="text-gray-400 mb-6 text-lg leading-relaxed">
+                            Starlight Pictures was founded on a simple yet powerful idea: to create films that resonate. We are a collective of passionate directors, writers, producers, and artists dedicated to pushing the boundaries of visual storytelling. Our mission is to bring unique visions to life, creating experiences that are not just watched, but felt.
+                        </p>
+                        <p class="text-gray-400 text-lg leading-relaxed">
+                            From initial concept to final cut, we pour our expertise and creativity into every frame, ensuring each project is a masterpiece of both technical skill and emotional depth.
+                        </p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-2">
+                        <img src="https://placehold.co/800x600/000000/333333?text=Our+Studio" alt="Production Team" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+                </div>
+
+                <!-- Our Philosophy -->
+                <div class="text-center my-24">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-12">Our Philosophy</h2>
+                    <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-teal-500/10 mx-auto mb-4 border border-teal-500/30">
+                                <i data-feather="heart" class="w-8 h-8 text-teal-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Story First</h3>
+                            <p class="text-gray-400">We believe that a compelling narrative is the heart of every great film.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-amber-500/10 mx-auto mb-4 border border-amber-500/30">
+                                <i data-feather="eye" class="w-8 h-8 text-amber-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Visual Innovation</h3>
+                            <p class="text-gray-400">We push creative boundaries to craft unforgettable visual experiences.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-cyan-500/10 mx-auto mb-4 border border-cyan-500/30">
+                                <i data-feather="users" class="w-8 h-8 text-cyan-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Collaborative Spirit</h3>
+                            <p class="text-gray-400">The best work comes from a fusion of creative minds working in harmony.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meet the Team -->
+                <div class="my-24">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-12 text-center">Meet the Team</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                        <!-- Team Member 1 -->
+                        <div class="text-center">
+                            <img src="https://placehold.co/400x400/111827/ffffff?text=A.J.+Morgan" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-gray-800">
+                            <h3 class="text-xl font-bold text-white">A.J. Morgan</h3>
+                            <p class="text-teal-400">Founder & Executive Producer</p>
+                        </div>
+                        <!-- Team Member 2 -->
+                        <div class="text-center">
+                            <img src="https://placehold.co/400x400/111827/ffffff?text=C.L.+Reyes" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-gray-800">
+                            <h3 class="text-xl font-bold text-white">C.L. Reyes</h3>
+                            <p class="text-teal-400">Head of Production</p>
+                        </div>
+                        <!-- Team Member 3 -->
+                        <div class="text-center">
+                            <img src="https://placehold.co/400x400/111827/ffffff?text=Sam+Chen" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-gray-800">
+                            <h3 class="text-xl font-bold text-white">Sam Chen</h3>
+                            <p class="text-teal-400">Lead Director</p>
+                        </div>
+                        <!-- Team Member 4 -->
+                        <div class="text-center">
+                            <img src="https://placehold.co/400x400/111827/ffffff?text=J.D.+Patel" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-gray-800">
+                            <h3 class="text-xl font-bold text-white">J.D. Patel</h3>
+                            <p class="text-teal-400">Director of Post-Production</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative border-t border-gray-900 py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; 2024 Starlight Pictures. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors duration-300"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors duration-300"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors duration-300"><i data-feather="linkedin" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Shared script for all pages
+        feather.replace();
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        const canvas = document.getElementById('gradient-canvas');
+        const ctx = canvas.getContext('2d');
+        let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        let particles = [];
+        const colors = ["#14b8a6", "#0891b2", "#f97316", "#b45309"];
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        class Particle {
+            constructor(isMouseFollower = false) {
+                this.isMouseFollower = isMouseFollower;
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.radius = Math.random() * Math.min(canvas.width, canvas.height) * 0.5 + 200;
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+            }
+            update() {
+                if (this.isMouseFollower) {
+                    this.x += (mouse.x - this.x) * 0.05;
+                    this.y += (mouse.y - this.y) * 0.05;
+                } else {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x - this.radius < 0 || this.x + this.radius > canvas.width) this.vx *= -1;
+                    if (this.y - this.radius < 0 || this.y + this.radius > canvas.height) this.vy *= -1;
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius);
+                gradient.addColorStop(0, this.color + 'ff');
+                gradient.addColorStop(1, this.color + '00');
+                ctx.fillStyle = gradient;
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        function init() {
+            resizeCanvas();
+            particles = [];
+            particles.push(new Particle(true));
+            for (let i = 0; i < 3; i++) {
+                particles.push(new Particle());
+            }
+        }
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+        window.addEventListener('resize', init);
+        init();
+        animate();
+    </script>
+</body>
+</html>
